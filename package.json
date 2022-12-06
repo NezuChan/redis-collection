@@ -8,7 +8,7 @@
     "lint": "eslint src --ext ts",
     "lint:fix": "eslint src --fix --ext ts",
     "build": "swc src -d dist",
-    "build:typings": "tsc --emitDeclarationOnly --declaration --"
+    "build:typings": "tsc --emitDeclarationOnly --declaration"
   },
   "author": "KagChi",
   "license": "GPL-3.0",
