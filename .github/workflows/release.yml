@@ -18,6 +18,7 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npm run build:typings
+      - run: npm run build:esm
       - name: Publish source
         run: |
           npm publish --access public || true
