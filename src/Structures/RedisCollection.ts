@@ -1,6 +1,6 @@
 import type { Buffer } from "node:buffer";
 import { Collection, type ReadonlyCollection } from "@discordjs/collection";
-import type { Redis } from "ioredis";
+import type { Redis, Cluster } from "ioredis";
 import type { Serialized } from "../Util";
 
 /**
@@ -18,7 +18,7 @@ export interface RedisCollectionOptions<T, ReturnType = Serialized<T>> {
 	/**
 	 * IORedis client instance
 	 */
-	redis: Redis;
+	redis: Redis | Cluster;
 	/**
 	 * Serialize values before inserting them into Redis
 	 */
@@ -72,7 +72,7 @@ export class RedisCollection<V, ReturnType = Serialized<V>> {
 	/**
 	 * IORedis client instance
 	 */
-	public readonly redis: Redis;
+	public readonly redis: Redis | Cluster;
 
 	/**
 	 * Serialize values before inserting them into Redis

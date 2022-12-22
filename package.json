@@ -1,6 +1,6 @@
 {
   "name": "@nezuchan/redis-collection",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "description": "A Fork of @discordjs/redis-collection.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
